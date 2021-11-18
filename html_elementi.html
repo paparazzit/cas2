@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" value="html, tagovi, elementi, html struktura" />
+		<meta name="author" value="Srdjan Srdjanov" />
+		<meta name="description" value="Ucimo HTML elemente i zabavljamo se" />
+
+		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+			h2 {
+				color: green;
+			}
+			#sadrzaj {
+				background-color: lightblue;
+			}
+		</style>
+		<title>HTML ELEMENTI</title>
+	</head>
+	<body>
+		<!-- NASLOV -->
+		<h1>UCIMO HTML</h1>
+		<hr />
+
+		<!--SADRZAJ -->
+		<div id="sadrzaj">
+			<h2>SADRZAJ:</h2>
+			<ol>
+				<li><a href="#meta-tagovi">Meta tagovi</a></li>
+				<li><a href="#naslovi">Naslovi</a></li>
+				<li><a href="#paragrafi">Paragrafi</a></li>
+				<li><a href="#liste">Liste</a></li>
+				<li><a href="#tabele">Tabele</a></li>
+			</ol>
+			<hr />
+		</div>
+		<!-- META TAGOVI -->
+		<div id="meta-tagovi">
+			<h2>Meta tagovi:</h2>
+			<p>
+				Meta tagovi se pisu u head elementu, oni se ne prikazuju kao sadrzaj u
+				pretrazivacu
+			</p>
+			<p>
+				Meta tagovi se pisu ovako: &lt;meta atribut = "vrednost"
+				<span style="color: red">npr: </span> name="author" /&gt;
+			</p>
+			<img src="img/meta-tagovi.png" alt="" />
+			<br />
+			<a href="https://www.w3schools.com/tags/tag_meta.asp" target="blank"
+				>procitaj vise</a
+			>
+			<br />
+			<br />
+			<a href="#sadrzaj">Vrati me natrag</a>
+			<hr />
+		</div>
+
+		<!-- NASLOVI -->
+		<div id="naslovi">
+			<h2>NASLOVI:</h2>
+			<br />
+			<h1>NASLOVI h1</h1>
+			<h2 style="border: 1px solid red">Naslov h2</h2>
+			<h3>Nalov h3</h3>
+			<h4>Nalov h4</h4>
+			<h5>Naslov h5</h5>
+			<h6>Naslov h6</h6>
+			<br />
+			<p>Nalovi se pisu &lt;h1&gt; OVDE STAVITE NEKI NASLOV &lt;/h1&gt;</p>
+
+			<p>
+				Naslovi su po defaultu (podrazumevano) block-level elementi, oni
+				zauzimaju celu sirinu roditeljskog elementa <br />
+				i uvek se prikazuje u novom redu.
+			</p>
+			<a href="https://www.w3schools.com/html/html_headings.asp" target="blank"
+				>Procitaj vise</a
+			>
+			<br />
+			<br />
+			<a href="#sadrzaj">Vrati me natrag</a>
+			<br />
+			<br />
+			<hr />
+		</div>
+		<!-- PARAGRAFI -->
+		<div id="paragrafi">
+			<h2>Paragrafi:</h2>
+			<p>Paragrafi su block-level elementi</p>
+			<p>
+				U paragraf mogu da se smeste ili "ugnjezde" i drugi elementi kao npr
+				&lt;span&gt;Ovde ide neki test &lt;/span&gt;, linkovi, i ostali elementi
+				za oznacavanje teksta.
+				<b>BOLD</b>, <strong>strong</strong>, <i>Italic</i>,
+				<a
+					href="https://www.w3schools.com/html/html_paragraphs.asp"
+					target="blank"
+					>itd...</a
+				>
+			</p>
+			<br />
+			<br />
+			<a href="#sadrzaj">Vrati me natrag</a>
+			<hr />
+		</div>
+
+		<!-- LISTE -->
+		<div id="liste">
+			<h2>LISTE:</h2>
+			<h3>Unsorted lista</h3>
+			<ul>
+				<li>List Item 1</li>
+				<li>List Item 2</li>
+				<li>List Item 3</li>
+			</ul>
+			<h3>Kako se pise unsorted Lista</h3>
+			<p>
+				&lt;UL &gt; <br />
+				&lt;li&gt;LIST Item 1 &lt;/li&gt; <br />
+				&lt;li&gt;LIST Item 2 &lt;/li&gt; <br />
+				&lt;/UL &gt;
+			</p>
+			<h3>Ordered List</h3>
+			<ol>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>Javascript</li>
+			</ol>
+			<h3>Opcije za OL</h3>
+			<ol style="list-style-type: upper-roman">
+				<li>Hleb</li>
+				<li>Mleko</li>
+				<li>Novine</li>
+			</ol>
+			<h3>Kako se pise Ordered List</h3>
+			<p>
+				&lt;OL &gt; <br />
+				&lt;li&gt;LIST Item 1 &lt;/li&gt; <br />
+				&lt;li&gt;LIST Item 2 &lt;/li&gt; <br />
+				&lt;/OL &gt;
+			</p>
+			<h3>DEFINITION LIST</h3>
+
+			<dl>
+				<dt>HTML</dt>
+				<dd>hypertext markup language</dd>
+				<dd>HTML is the standard markup language for creating Web pages</dd>
+				<dd>HTML describes the structure of a Web page</dd>
+				<dt>CSS</dt>
+				<dd>cascading stylesheet</dd>
+				<dd>
+					describes how HTML elements are to be displayed on screen, paper, or
+					in other media
+				</dd>
+				<dd>External stylesheets are stored in CSS files</dd>
+			</dl>
+			<a href="https://www.w3schools.com/html/html_lists.asp" target="blank"
+				>Procitaj vise o listama</a
+			>
+			<br />
+			<br />
+			<a href="#sadrzaj">Vrati me natrag</a>
+			<br />
+			<br />
+			<hr />
+		</div>
+
+		<!-- TABELE -->
+		<div id="tabele">
+			<h2>TABELE</h2>
+			<p>Tabele su isto block-level elementi</p>
+			<br />
+			<table border="1" cellpadding="10">
+				<caption>
+					Imena polaznika
+				</caption>
+				<thead>
+					<tr>
+						<th>Ime</th>
+						<th>Prezime</th>
+						<th>Zanimanje</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Srdjan</td>
+						<td>Srdajnov</td>
+						<td>Developer</td>
+					</tr>
+					<tr>
+						<td>Petar</td>
+						<td>Petrovic</td>
+						<td>Moler</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2">Ukupno</td>
+						<td>2 ucenika</td>
+					</tr>
+				</tfoot>
+			</table>
+			<br />
+			<h3>Malo drugaciji izgled tabele</h3>
+
+			<table border="1" cellpadding="15">
+				<caption>
+					Kvartalni pregled
+				</caption>
+				<thead>
+					<tr>
+						<th colspan="3" style="background: tomato">
+							Kvartalni prikaz stanja
+						</th>
+					</tr>
+				</thead>
+				<thead>
+					<tr>
+						<th>Januar</th>
+						<th>Februar</th>
+						<th>Mart</th>
+					</tr>
+				</thead>
+				<tbody>
+					<td>120$</td>
+					<td>100$</td>
+					<td>170$</td>
+				</tbody>
+			</table>
+			<br />
+			<br />
+			<a href="https://www.w3schools.com/html/html_tables.asp" target="blank"
+				>Ovdfe mozete procitati vise o tabelama</a
+			>
+			<br />
+			<br />
+			<a href="#sadrzaj">Vrati me natrag</a>
+			<hr />
+		</div>
+	</body>
+</html>
